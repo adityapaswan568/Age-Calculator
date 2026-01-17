@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Age Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator-card">
+            <h1>Age Calculator</h1>
+            <p class="subtitle">Enter your birthdate to reveal your journey through time.</p>
+
+            <div class="input-group">
+                <div class="date-inputs">
+                    <input type="number" id="day" placeholder="DD" min="1" max="31">
+                    <input type="number" id="month" placeholder="MM" min="1" max="12">
+                    <input type="number" id="year" placeholder="YYYY" min="1900">
+                </div>
+                <button id="calculateBtn">Calculate Age</button>
+            </div>
+
+            <div class="result-container" id="resultContainer">
+                <div class="result-box">
+                    <span class="number" id="years">0</span>
+                    <span class="label">Years</span>
+                </div>
+                <div class="result-box">
+                    <span class="number" id="months">0</span>
+                    <span class="label">Months</span>
+                </div>
+                <div class="result-box">
+                    <span class="number" id="weeks">0</span>
+                    <span class="label">Weeks</span>
+                </div>
+                <div class="result-box">
+                    <span class="number" id="days">0</span>
+                    <span class="label">Days</span>
+                </div>
+            </div>
+
+            <p id="message" class="message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
